@@ -1,5 +1,5 @@
 /*******************************************************************************
- * @file Style.h
+ * @file style.h
  * @brief This is a template header provided as an example.
  * @par
  * Copyright (C) 2022 Justin Reina - All Rights Reserved.
@@ -42,7 +42,7 @@
  Public Function Declaration(s)
 *=============================================================================*/
 
-void Style_Encode(const uint8_t const *KeyPtr)
+void Style_Encode(const uint8_t const *KeyPtr);
 
 #endif /* STYLE_H */
 /*==============================================================================

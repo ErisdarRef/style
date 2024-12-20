@@ -10,27 +10,27 @@
  *
  *  @notes    x
  *
- *  @section	Opens
- * 	none current
+ *  @section    Opens
+ *      none current
  *
- *  @section	Legal Disclaimer
- * 	Â© Year Company Name, All rights reserved. All contents of this source file and/or any other related source  
- *	files are the explicit property of Company Name. Do not distribute. Do not copy.
+ *  @section    Legal Disclaimer
+ *  © Year Company Name, All rights reserved. All contents of this source file and/or any other related source
+ *  files are the explicit property of Company Name. Do not distribute. Do not copy.
  */
 /************************************************************************************************************************************/
 
 
 /************************************************************************************************************************************/
-/** @fcn	int main(void)
- *  @brief	x
- *  @details	x
+/** @fcn        int main(void)
+ *  @brief      x
+ *  @details    x
  *
- *  @section	Purpose
- *  	x
+ *  @section    Purpose
+ *      x
  *
- *  @param    [in]	name	descrip
+ *  @param    [in]  name    descrip
  *
- *  @param    [out]	name	descrip
+ *  @param    [out] name    descrip
  *
  *  @return   (type) descrip
  *
@@ -38,20 +38,20 @@
  *
  *  @post   x
  *
- *  @section	Operation
- *	x
- *		
- *  @section	Opens
- *  	x
+ *  @section    Operation
+ *      x
+ *      
+ *  @section    Opens
+ *      x
  *
- *  @section	Hazards & Risks
- *  	x
+ *  @section    Hazards & Risks
+ *      x
  *
- *  @section	Todo
- *	x
+ *  @section    Todo
+ *      x
  *
- *  @section	Timing
- *  	x
+ *  @section    Timing
+ *      x
  *
  *  @note   x
  */
@@ -64,7 +64,7 @@
 //                                                          SECTION HEADER                                                          //
 //**********************************************************************************************************************************//
 
-                                                                             /* note to the side                                    */
+                                                                            /* note to the side                                     */
 
 // a note on top
 // that spans multiple lines

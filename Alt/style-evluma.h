@@ -1,6 +1,6 @@
 /**
 **************************************************************************************************
-  Filename:       ev_twilight_store.c
+  Filename:       x
   Revised:        $ $
   Revision:       $ $
 
@@ -8,8 +8,8 @@
 
     Main - entry point to Evluma application
 
-	This module implements the twilight store in NV flash memory.  This file is largely ported 
-	as-is from TI to Nordic processors.
+    This module implements the twilight store in NV flash memory.  This file is largely ported 
+    as-is from TI to Nordic processors.
 
     Copyright 2017-2020, Evluma.  ALL RIGHTS RESERVED
 
@@ -24,37 +24,37 @@
 
 
 /*************************************************************************************************/
-/**	@fcn		int main(void)
- *  @brief		x
- *  @details	x
+/** @fcn        int main(void)
+ *  @brief      x
+ *  @details    x
  *
- *  Section	Purpose
- *  	x
+ *  Section Purpose
+ *      x
  *
- *  In:	 name	descrip
+ *  In:  name   descrip
  *
- *  Out: name	descrip
+ *  Out: name   descrip
  *
- *  Return:		(type) descrip
+ *  Return:     (type) descrip
  *
- *  Pre:		x
+ *  Pre:        x
  *
- *  Post:		x
+ *  Post:       x
  *
- *  Section 	Operation
- *		x
- *		
- *  Section 	Opens
- *  	x
+ *  Section     Operation
+ *      x
+ *      
+ *  Section     Opens
+ *      x
  *
- *  Section 	Hazards & Risks
- *  	x
+ *  Section     Hazards & Risks
+ *      x
  *
- *	Section 	Todo
- *		x
+ *  Section     Todo
+ *      x
  *
- *  Section 	Timing
- *  	x
+ *  Section     Timing
+ *      x
  *
  *  Note: x
  */
@@ -79,7 +79,7 @@
 // comment - there is a bootloader and we have valid boot settings
 
 
-												  // side comment
+                                                  // side comment
 
 
 static void some_local_fcn(void)
@@ -91,7 +91,7 @@ static void some_local_fcn(void)
 /*********************************************************************************/
 /*
     Some comment section - On this main thread, there are couple occasions where we 
-	might need to do a blocking delay; i.e. delay in-line.  
+    might need to do a blocking delay; i.e. delay in-line.  
 
     !! This can only be used from this main thread (including manufacturing test).
     !! Do not call this code from anything other than this main thread.
@@ -102,7 +102,7 @@ static void some_local_fcn(void)
 /**@brief Function for handling the idle state (main loop).
  *
  * @details If there is no pending log operation, then sleep until next the next event occurs.
- */												  
+ */                                               
 
 
 //*****************************************************************************************

@@ -1,69 +1,71 @@
-%%-----------------------------------------------------------------------------------------------------------------------------------/
- %  @file		x
- %  @brief		x
- % 	@details	x
+%%-------------------------------------------------------------------------------------------------/
+ %  @file       x
+ %  @brief      x
+ %  @details    x
  %
- % 	@author		Justin Reina, Firmware Engineer, Company Name
- % 	@created	x
- % 	@last rev	x
+ %  @author     Justin Reina, Firmware Engineer, Company Name
+ %  @created    x
+ %  @last rev   x
  %
  %
- % 	@notes		x
+ %  @notes      x
  %
- % 	@section	Opens
- %  	none current
+ %  @section    Opens
+ %      none current
  % 
- % 	@section	Legal Disclaimer
- % 		Â© Year Company, All rights reserved. All contents of this source file and/or any other related source files 
- %		are the explicit property of Company Name. Do not distribute. Do not copy. 
+ %  @section    Legal Disclaimer
+ %      © Year Company, All rights reserved. All contents of this source file and/or any other 
+ %      related source files are the explicit property of Company. Do not distribute. Do not copy. 
  %
-%%-----------------------------------------------------------------------------------------------------------------------------------/
+%%-------------------------------------------------------------------------------------------------/
+
 clc, clear all, format compact                                              % Setup
+
 disp("Welcome to StdComments.m");
 
 
-%%-----------------------------------------------------------------------------------------------------------------------------------/
- %  @fcn		someFunction
- %  @brief		x
- % 	@details	x
+%%-------------------------------------------------------------------------------------------------/
+ %  @fcn        someFunction
+ %  @brief      x
+ %  @details    x
  %
- %  @param		[in]	name	descrip
+ %  @param      [in]    name    descrip
  %
- %  @return		descrip
+ %  @return     descrip
  %
  %  @pre        x
  %
- %  @post		x
+ %  @post       x
  %
- %  @section	Operation
- %		x
- %		
- %  @section	Opens
- %  	x
+ %  @section    Operation
+ %      x
+ %      
+ %  @section    Opens
+ %      x
  %
- %  @section	Hazards & Risks
- %  	x
+ %  @section    Hazards & Risks
+ %      x
  %
- %  @section	Todo
- %		x
+ %  @section    Todo
+ %      x
  %
- %  @section	Timing
- %  	x
+ %  @section    Timing
+ %      x
  %
- %  @note		x
+ %  @note       x
  %
-%%-----------------------------------------------------------------------------------------------------------------------------------/
+%%-------------------------------------------------------------------------------------------------/
 function someRslt = someFunction( x ) 
     someRslt = x;
 end % of function
 
-%%------------------------------------------------------------A Delimiting Note-----------------------------------------------------%%
+%%-------------------------------------- A Delimiting Note ---------------------------------------%%
 
-%%**********************************************************************************************************************************%%
-%%																SECTION HEADER														%%
-%%**********************************************************************************************************************************%%
+%%************************************************************************************************%%
+%%                                        SECTION HEADER                                          %%
+%%************************************************************************************************%%
 
-																			% note to the side
+                                                    % note to the side
 
 % a note
 
@@ -72,5 +74,5 @@ end % of function
 
 %% PROTOTYPES, DECLARATIONS AND PREPROC
 
-%% [1/x]-------------------------------------------STEP 1---------------------------------------------------------------------------%%
+%% [1/x]---------------------------------------- STEP 1 -------------------------------------------%%
 

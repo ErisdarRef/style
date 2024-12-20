@@ -1,5 +1,5 @@
 /*******************************************************************************
- * @file Style.c
+ * @file style.c
  * @brief This is a template source file provided as an example.
  * @par
  * Copyright (C) 2022 Justin Reina - All Rights Reserved.

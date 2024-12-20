@@ -31,9 +31,9 @@
 			<locationURI>PARENT-2-PROJECT_LOC/.gitignore</locationURI>
 		</link>
 		<link>
-			<name>Work</name>
+			<name>Alt</name>
 			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Alt</locationURI>
 		</link>
 		<link>
 			<name>style-cpp.h</name>
@@ -41,19 +41,9 @@
 			<locationURI>PARENT-2-PROJECT_LOC/style-cpp.h</locationURI>
 		</link>
 		<link>
-			<name>style-evluma.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style-evluma.h</locationURI>
-		</link>
-		<link>
 			<name>style-swift.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/style-swift.h</locationURI>
-		</link>
-		<link>
-			<name>style-wide.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style-wide.h</locationURI>
 		</link>
 		<link>
 			<name>style.bat</name>
@@ -89,16 +79,6 @@
 			<name>style.xml</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/style.xml</locationURI>
-		</link>
-		<link>
-			<name>Work/Style.c</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Style.c</locationURI>
-		</link>
-		<link>
-			<name>Work/Style.h</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/Style.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>

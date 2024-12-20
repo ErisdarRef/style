@@ -14,7 +14,7 @@
  *  none current
  *
  *  @section    Legal Disclaimer
- *  Â© 2024 Justin Reina, All rights reserved. All contents of this source file and/or any other
+ *  © 2024 Justin Reina, All rights reserved. All contents of this source file and/or any other
  *  related source files are the explicit property of Justin Reina. Do not distribute. Do not copy.
  */
 /**************************************************************************************************/
