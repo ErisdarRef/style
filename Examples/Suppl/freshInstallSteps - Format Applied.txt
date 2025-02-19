@@ -1,0 +1,46 @@
+@brief 		Fresh Laptop Reinstallation Procedure
+@details 	After reformat of SSD
+@auth 		Justin Reina
+@date 		7/15/16
+
+@section 	Notes
+
+	1. Toolbar
+
+	2. Desktop
+
+	3. Folder Linkage in File Explorer
+		Turn off Homegroup [1]		
+		Turn off OneCloud [2] 
+		Setup Quick Access Links
+
+	4. Activate Windows
+
+	5. Office, Visio, Outlook
+
+	6. AVG Anti-virus
+
+	7. iTunes
+
+	8. Firefox Toolbars & Account
+
+	9. Clean up HDD's, organization of files, letters and names!
+		Move Media to Media HDD!!! :) And complete all other movements! :)
+
+	10. SW (Work Core, Development Supplementary, Personal, All Else!)
+
+	11. Start Menu
+
+	Setup Quicken
+
+	Sync with phone & library
+
+	Cleanup the Start Menu 'All Apps' Listing
+
+	Seagate Backups
+
+@section 	Reference
+	1. http://winaero.com/blog/how-to-remove-homegroup-icon-windows-10-file-explorer
+			
+	2. https://www.tekrevue.com/tip/remove-onedrive-file-explorer-sidebar-windows-10
+

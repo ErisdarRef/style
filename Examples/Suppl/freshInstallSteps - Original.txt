@@ -1,0 +1,22 @@
+This is the procedure taken after my fresh Install of Windows 10 on a fresh reformat of the SSD
+7.15.16
+
+[X] Toolbar
+[X] Desktop
+[X] Folder Linkage in File Explorer
+		Turn off Homegroup (http://winaero.com/blog/how-to-remove-homegroup-icon-windows-10-file-explorer/)
+		Turn off OneCloud (https://www.tekrevue.com/tip/remove-onedrive-file-explorer-sidebar-windows-10/)
+		Setup Quick Access Links
+[X] Activate Windows
+[X] Office, Visio, Outlook
+[X] AVG Anti-virus
+[X] iTunes
+[X] Firefox Toolbars & Account
+[X] Clean up HDD's, organization of files, letters and names!
+		Move Media to Media HDD!!! :) And complete all other movements! :)
+[X] SW (Work Core, Development Supplementary, Personal, All Else!)
+[X] Start Menu
+[X] Setup Quicken
+[X] Sync with phone & library
+[X] Cleanup the Start Menu 'All Apps' Listing
+[X] Seagate Backups

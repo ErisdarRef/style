@@ -1,8 +1,7 @@
 @brief      Coding Style
 @details    x
-@url        https://gitlab.com/justinmreina/style
 @auth       Justin Reina
-@date       12/20/24
+@date       3/13/25
 
 
 @section    Line Lengths
@@ -12,7 +11,7 @@
 @section    General Guidelines
     File headers
 
-    Funcion headers
+    Function headers
 
     Section headers
 
@@ -28,12 +27,11 @@
     MATLAB StdComments
     JAVA StdComments
     Swift StdComments
-    Files pending storage
-
+	...
     Consider wiki for descrip
 
-@section    Pending Proper Storage
-    stdcomments.h
-    stdcomments.zip
-    StdComments-Cpp.h
+@section 	Repository
 
+	@loc 	ErisdarRef/style
+
+	@url 	https://github.com/ErisdarRef/style
