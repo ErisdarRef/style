@@ -5,7 +5,7 @@
  *
  *  @author   Justin Reina, Firmware Engineer
  *  @created  1/15/25
- *  @last rev 1/15/25
+ *  @last rev 4/3/25
  *
  *
  *  @notes    x
@@ -14,7 +14,7 @@
  *      none current
  *
  *  @section    Legal Disclaimer
- *      © 2025 Justin Reina, All rights reserved. All contents of this source file and/or any other
+ *      Â©2025 Justin Reina. All rights reserved. All contents of this source file and/or any other
  *      related source files are the explicit property of Justin Reina. Do not distribute.
  *      Do not copy.
  */
@@ -58,8 +58,12 @@
  */
 /**************************************************************************************************/
 
+// a note on top
+// that spans multiple lines
+
 
 //--------------------------------------- A Delimiting Note --------------------------------------//
+
 
 //************************************************************************************************//
 //                                         SECTION HEADER                                         //
@@ -67,8 +71,14 @@
 
                                                     /* note to the side                           */
 
-// a note on top
-// that spans multiple lines
+/**
+ * @brief       content header notes providing detail
+ * @details     useful with code organization & flow
+ */
+#define EXAMPLE_DEF_ONE 	(123)
+#define EXAMPLE_DEF_TWO 	(456)
+#define EXAMPLE_DEF_THREE 	(789)
+
 
 // PROTOTYPES, DECLARATIONS AND PREPROC-----------------------------------------------------------//
 

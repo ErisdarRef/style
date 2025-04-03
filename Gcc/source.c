@@ -5,7 +5,7 @@
  *
  *  @author   Justin Reina, Firmware Engineer
  *  @created  2/3/25
- *  @last rev 2/3/25
+ *  @last rev 4/3/25
  *
  *  @note   Private functions & variables are declared static
  *
@@ -13,7 +13,7 @@
  *      none current
  *
  *  @section    Legal Disclaimer
- *      © 2025 Justin Reina, All rights reserved. All contents of this source file and/or any other
+ *      ©2025 Justin Reina, All rights reserved. All contents of this source file and/or any other
  *      related source files are the explicit property of Justin Reina. Do not distribute.
  *      Do not copy.
  */
@@ -25,7 +25,6 @@
 //************************************************************************************************//
 
 //Standard Library Includes
-
 
 //Library Includes
 
@@ -119,4 +118,5 @@ int main(void) {
 //************************************************************************************************//
 //                                         PRIVATE FUNCTIONS                                      //
 //************************************************************************************************//
+
 

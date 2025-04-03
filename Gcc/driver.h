@@ -1,22 +1,11 @@
 /**************************************************************************************************/
-/** @file     source.h
- *  @brief    file headers are typically omitted for source file headers
- *  @details  e.g. main.h header is typ omitted in priority for main.c header content
- *
- *  @author   Justin Reina, Firmware Engineer
- *  @created  2/3/25
- *  @last rev 2/3/25
- *
- *  @section    Opens
- *      none current
- *
- *  @section    Legal Disclaimer
- *      © 2025 Justin Reina, All rights reserved. All contents of this source file and/or any other
- *      related source files are the explicit property of Justin Reina. Do not distribute.
- *      Do not copy.
+/** @file     driver.h
+ *  @brief    Driver interface for public API
+ *  @details  x
  */
 /**************************************************************************************************/
-
+#ifndef DIR_DRIVER_H
+#define DIR_DRIVER_H
 
 //************************************************************************************************//
 //                                            INCLUDES                                            //
@@ -46,6 +35,13 @@
 
 //------------------------------------------- Typedefs -------------------------------------------//
 
+//Setup
+typedef struct driverConfig {
+	int paramOne;								    /* qualifying descrip for param               */
+	int paramTwo;								    /* qualifying descrip for param               */
+	/* .... */
+} DriverConfig;
+
 
 //************************************************************************************************//
 //                                            VARIABLES                                           //
@@ -56,8 +52,41 @@
 //                                       FUNCTION DECLARATIONS                                    //
 //************************************************************************************************//
 
-//Public
+//-------------------------------------------- Public --------------------------------------------//
+
+//Setup
+extern void driver_init(DriverConfig *cfg);
+extern void driver_enable(void);
+extern void driver_disable(void);
+
+//Action
+extern void  driver_start(void);
+extern void  driver_stop(void);
+extern void *driver_status(void);                   /* current status of API performance          */
+extern void  driver_reset(void);
+
+//Configure
+extern void driver_setConfig(DriverConfig *cfg);
+extern DriverConfig *driver_getConfig(void);        /* applied configuration for use              */
+extern void *driver_getInfo(void);                  /* current operational state                  */
+
+//Get-Set
+extern int  driver_getState(void);
+extern void driver_setState(int val);
+
+//Read-Write
+extern int  driver_read(void);
+extern void driver_write(int val);
+
+//Log
+extern void *driver_getLog(void);
+
+//Int
+extern void driver_callback(void);                  /* default peripheral interrupt callback      */
 
 
-//Private
+//-------------------------------------------- Private -------------------------------------------//
+
+
+#endif /*  DIR_DRIVER_H */
 
