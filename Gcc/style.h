@@ -3,9 +3,9 @@
  *  @brief    x
  *  @details  x
  *
- *  @author   Justin Reina, Firmware Engineer
- *  @created  1/15/25
- *  @last rev 4/3/25
+ *  @author     Justin Reina, Firmware Engineer
+ *  @created    1/15/25
+ *  @last rev   4/5/25
  *
  *
  *  @notes    x
@@ -75,9 +75,9 @@
  * @brief       content header notes providing detail
  * @details     useful with code organization & flow
  */
-#define EXAMPLE_DEF_ONE 	(123)
-#define EXAMPLE_DEF_TWO 	(456)
-#define EXAMPLE_DEF_THREE 	(789)
+#define EXAMPLE_DEF_ONE     (123)
+#define EXAMPLE_DEF_TWO     (456)
+#define EXAMPLE_DEF_THREE   (789)
 
 
 // PROTOTYPES, DECLARATIONS AND PREPROC-----------------------------------------------------------//

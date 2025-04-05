@@ -1,7 +1,9 @@
 /**************************************************************************************************/
 /** @file     driver.h
  *  @brief    Driver interface for public API
- *  @details  x
+ *  @details  interface file header is typically omitted in preference for source file header
+ *
+ *  @note   Consider replacing driverConfig.comps with dynamic alloc as a ptr
  */
 /**************************************************************************************************/
 #ifndef DIR_DRIVER_H
@@ -37,9 +39,11 @@
 
 //Setup
 typedef struct driverConfig {
-	int paramOne;								    /* qualifying descrip for param               */
-	int paramTwo;								    /* qualifying descrip for param               */
-	/* .... */
+    int comps[DRIVER_NUM_COMPS];                    /* qualifying descrip for comps e.g.  pins    */
+    
+    int paramOne;                                   /* qualifying descrip for param               */
+    int paramTwo;                                   /* qualifying descrip for param               */
+    /* .... */  
 } DriverConfig;
 
 
