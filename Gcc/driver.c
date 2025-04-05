@@ -5,7 +5,7 @@
  *
  *  @author   Justin Reina, Firmware Engineer
  *  @created  4/3/25
- *  @last rev 4/3/25
+ *  @last rev 4/5/25
  *
  *  @note   This template is recommended for use, keep only as needed
  *
@@ -30,6 +30,7 @@
 
 //Standard Library Includes
 #include <stdio.h>
+#include <string.h>
 
 //Library Includes
 
@@ -58,6 +59,8 @@
 //************************************************************************************************//
 //                                            VARIABLES                                           //
 //************************************************************************************************//
+
+static DriverConfig driverCfg;						/* configuration parameter for the driver     */
 
 
 //************************************************************************************************//
@@ -214,7 +217,12 @@ void driver_reset(void) {
  */
 /**************************************************************************************************/
 void driver_setConfig(DriverConfig *cfg) {
-    
+
+	//Copy value
+	memcpy(cfg, &driverCfg, sizeof(DriverConfig));
+	
+	//Apply to peripheral
+
     return;
 }
  
@@ -231,8 +239,7 @@ void driver_setConfig(DriverConfig *cfg) {
  */
 /**************************************************************************************************/
 DriverConfig *driver_getConfig(void) {
-    
-    return 0;
+    return &driverCfg;
 }
 
 
