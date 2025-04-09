@@ -60,7 +60,7 @@
 //                                            VARIABLES                                           //
 //************************************************************************************************//
 
-static DriverConfig driverCfg;						/* configuration parameter for the driver     */
+static DriverConfig driverCfg;                      /* configuration parameter for the driver     */
 
 
 //************************************************************************************************//
@@ -218,10 +218,10 @@ void driver_reset(void) {
 /**************************************************************************************************/
 void driver_setConfig(DriverConfig *cfg) {
 
-	//Copy value
-	memcpy(cfg, &driverCfg, sizeof(DriverConfig));
-	
-	//Apply to peripheral
+    //Copy value
+    memcpy(cfg, &driverCfg, sizeof(DriverConfig));
+    
+    //Apply to peripheral
 
     return;
 }
