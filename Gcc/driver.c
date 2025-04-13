@@ -7,7 +7,7 @@
  *  @created  4/3/25
  *  @last rev 4/5/25
  *
- *  @note   This template is recommended for use, keep only as needed
+ *  @note   Contents from this template are recommended as needed
  *
  *  @section    Opens
  *      none currents
@@ -17,7 +17,7 @@
  *      Read/Write - activity
  *
  *  @section    Legal Disclaimer
- *      Â©2025 Justin Reina. All rights reserved. All contents of this source file and/or any other
+ *      ©2025 Justin Reina. All rights reserved. All contents of this source file and/or any other
  *      related source files are the explicit property of Justin Reina. Do not distribute.
  *      Do not copy.
  */

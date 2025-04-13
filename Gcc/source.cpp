@@ -5,21 +5,19 @@
  *
  *  @author     Justin Reina, Firmware Engineer
  *  @created    4/6/25
- *  @last rev   4/6/25
+ *  @last rev   4/13/25
  *
  *  @note   Private functions & variables are declared static
  *
  *  @section    Opens
- *      none current
+ *      validate with test content
  *
  *  @section    Legal Disclaimer
- *      Â©2025 Justin Reina. All rights reserved. All contents of this source file and/or any other
+ *      ©2025 Justin Reina. All rights reserved. All contents of this source file and/or any other
  *      related source files are the explicit property of Justin Reina. Do not distribute.
  *      Do not copy.
  */
 /**************************************************************************************************/
-using namespace std;                                /* @todo    drop this                         */
-
 
 //************************************************************************************************//
 //                                            INCLUDES                                            //
@@ -152,6 +150,26 @@ public:
 //************************************************************************************************//
 private:
 
-    //@todo     log()
+    /**********************************************************************************************/
+    /** @fcn        static void source_log(char *msg, int val)
+     *  @brief      Record content to source log utilities
+     *  @details    x
+     *
+     *  @param    [in] (char *) msg - x
+     *  @param    [in] (int) val - x
+     *
+     *  @pre   	System.initialize()
+     *  @post   x
+     */
+    /**********************************************************************************************/
+    static void source_log(char *msg, int val) {
+
+        // Write data to the peripheral
+
+        // Replace this with actual hardware write
+        printf("Writing data to peripheral: %d\n", val);
+
+        return;
+    }
 };
 

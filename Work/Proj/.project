@@ -33,52 +33,92 @@
 		<link>
 			<name>Alt</name>
 			<type>2</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Alt</locationURI>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>style-cpp.h</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style-cpp.h</locationURI>
+			<name>Gcc</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
 		</link>
 		<link>
-			<name>style-swift.h</name>
+			<name>Alt/style-cpp.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style-swift.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style-cpp.h</locationURI>
 		</link>
 		<link>
-			<name>style.bat</name>
+			<name>Alt/style-swift.h</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style.bat</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style-swift.h</locationURI>
 		</link>
 		<link>
-			<name>style.h</name>
+			<name>Alt/style.bat</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style.h</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style.bat</locationURI>
 		</link>
 		<link>
-			<name>style.html</name>
+			<name>Alt/style.html</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style.html</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style.html</locationURI>
 		</link>
 		<link>
-			<name>style.m</name>
+			<name>Alt/style.m</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style.m</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style.m</locationURI>
 		</link>
 		<link>
-			<name>style.md</name>
+			<name>Alt/style.md</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style.md</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style.md</locationURI>
 		</link>
 		<link>
-			<name>style.vbs</name>
+			<name>Alt/style.vbs</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style.vbs</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style.vbs</locationURI>
 		</link>
 		<link>
-			<name>style.xml</name>
+			<name>Alt/style.xml</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/style.xml</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/style.xml</locationURI>
+		</link>
+		<link>
+			<name>Gcc/CMakeLists_proj.txt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/CMakeLists_proj.txt</locationURI>
+		</link>
+		<link>
+			<name>Gcc/CMakeLists_src.txt</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/CMakeLists_src.txt</locationURI>
+		</link>
+		<link>
+			<name>Gcc/driver.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/driver.c</locationURI>
+		</link>
+		<link>
+			<name>Gcc/driver.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/driver.h</locationURI>
+		</link>
+		<link>
+			<name>Gcc/source.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.c</locationURI>
+		</link>
+		<link>
+			<name>Gcc/source.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.cpp</locationURI>
+		</link>
+		<link>
+			<name>Gcc/source.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.h</locationURI>
+		</link>
+		<link>
+			<name>Gcc/style.h</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/style.h</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
