@@ -1,11 +1,12 @@
 /**************************************************************************************************/
 /** @file     main.cpp
- *  @brief    Style content inspection & validation
+ *  @brief    Style content inspect & validate
  *  @details  x
  *
  *  @section    Opens
- * 		main.c tests & validates content from Gcc\
- * 		- having issues with source includes from both C & C++
+ *  	- Update compiler include path to relative (Gcc is absolute now; tricky!)
+ *  	- Source test integration (e.g. source.c & driver.c)
+ *  	- C++ integration
  */
 /**************************************************************************************************/
 
@@ -16,30 +17,27 @@
 //Standard Library Includes
 #include <iostream>
 
+//Project Includes
+#include "style.h"
+
+
+//************************************************************************************************//
+//                                       FUNCTION DECLARATIONS                                    //
+//************************************************************************************************//
+using namespace std;
 
 /**************************************************************************************************/
 /** @fcn        int main(void)
  *  @brief      x
  *  @details    x
  *
- *  @return   (int) descrip
+ *  @return   (int) exit status
  */
 /**************************************************************************************************/
 int main(void) {
 
-	int number = 10;
+	printf("The number is: %d\n", EXAMPLE_DEF_ONE);
 
-	std::string text = "Hello, world!";
-
-	// Outputting an integer
-	std::cout << "The number is: " << number << std::endl;
-
-	// Outputting a string
-	std::cout << text << std::endl;
-
-	// Outputting multiple values in one line
-	std::cout << "Number: " << number << ", Text: " << text << std::endl;
-
-	return 0;
+	return EXIT_SUCCESS;
 }
 

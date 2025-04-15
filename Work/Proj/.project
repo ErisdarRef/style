@@ -31,64 +31,9 @@
 			<locationURI>PARENT-2-PROJECT_LOC/.gitignore</locationURI>
 		</link>
 		<link>
-			<name>Alt</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>Gcc</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
-			<name>Alt/style-cpp.h</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style-cpp.h</locationURI>
-		</link>
-		<link>
-			<name>Alt/style-swift.h</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style-swift.h</locationURI>
-		</link>
-		<link>
-			<name>Alt/style.bat</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style.bat</locationURI>
-		</link>
-		<link>
-			<name>Alt/style.html</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style.html</locationURI>
-		</link>
-		<link>
-			<name>Alt/style.m</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style.m</locationURI>
-		</link>
-		<link>
-			<name>Alt/style.md</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style.md</locationURI>
-		</link>
-		<link>
-			<name>Alt/style.vbs</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style.vbs</locationURI>
-		</link>
-		<link>
-			<name>Alt/style.xml</name>
-			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/style.xml</locationURI>
-		</link>
-		<link>
-			<name>Gcc/CMakeLists_proj.txt</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Gcc/CMakeLists_proj.txt</locationURI>
-		</link>
-		<link>
-			<name>Gcc/CMakeLists_src.txt</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Gcc/CMakeLists_src.txt</locationURI>
 		</link>
 		<link>
 			<name>Gcc/driver.c</name>
@@ -104,11 +49,6 @@
 			<name>Gcc/source.c</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.c</locationURI>
-		</link>
-		<link>
-			<name>Gcc/source.cpp</name>
-			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.cpp</locationURI>
 		</link>
 		<link>
 			<name>Gcc/source.h</name>
