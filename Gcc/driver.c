@@ -99,7 +99,7 @@ void driver_init(DriverConfig *cfg) {
 
 
     //Notify
-    printf("driver_init(): Driver initialization complete\n");
+    printf("driver_init(): Driver initialization complete\n\n");
     
     return;
 }
