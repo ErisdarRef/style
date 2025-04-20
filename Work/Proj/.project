@@ -46,9 +46,9 @@
 			<locationURI>PARENT-2-PROJECT_LOC/Gcc/driver.h</locationURI>
 		</link>
 		<link>
-			<name>Gcc/source.c</name>
+			<name>Gcc/source.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.c</locationURI>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.cpp</locationURI>
 		</link>
 		<link>
 			<name>Gcc/source.h</name>
@@ -59,6 +59,11 @@
 			<name>Gcc/style.h</name>
 			<type>1</type>
 			<locationURI>PARENT-2-PROJECT_LOC/Gcc/style.h</locationURI>
+		</link>
+		<link>
+			<name>Templates/source.c</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/Gcc/source.c</locationURI>
 		</link>
 	</linkedResources>
 </projectDescription>
