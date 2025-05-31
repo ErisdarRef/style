@@ -1,6 +1,6 @@
 /**************************************************************************************************/
-/** @file       driver.c
- *  @brief      Driver source for operation & control
+/** @file       component.c
+ *  @brief      Component source for operation & control
  *  @details    x
  *
  *  @author     Justin Reina, Firmware Engineer
@@ -37,7 +37,7 @@
 //BSP Includes
 
 //Project Includes
-#include "driver.h"
+#include "component.h"
 
 
 //************************************************************************************************//
@@ -60,7 +60,7 @@
 //                                            VARIABLES                                           //
 //************************************************************************************************//
 
-static DriverConfig driverCfg;                      /* configuration parameter for the driver     */
+static CompConfig compConfig;                        /* configuration parameter for the component     */
 
 
 //************************************************************************************************//
@@ -73,21 +73,21 @@ static DriverConfig driverCfg;                      /* configuration parameter f
 //************************************************************************************************//
 
 /**************************************************************************************************/
-/** @fcn        void driver_init(DriverConfig *cfg)
- *  @brief      Initialize driver & peripheral for use
+/** @fcn        void component_init(CompConfig *cfg)
+ *  @brief      Initialize component for use
  *  @details    x
  *
- *  @param    [in]  (DriverConfig *) cfg - driver & peripheral initialization configuration
+ *  @param    [in]  (CompConfig *) cfg - component initialization configuration
  *
  *  @pre    system_initialize()
- *  @post   Driver is initialized for use
+ *  @post   Component is initialized for use
  *
  *  @section    Opens
  *      Define & implement routine
  *      Consider reporting status on post console/log report
  */
 /**************************************************************************************************/
-void driver_init(DriverConfig *cfg) {
+void component_init(CompConfig *cfg) {
 
     //Locals
 
@@ -99,67 +99,67 @@ void driver_init(DriverConfig *cfg) {
 
 
     //Notify
-    printf("driver_init(): Driver initialization complete\n");
+    printf("component_init(): Component initialization complete\n");
     
     return;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_enable(void)
- *  @brief      Enable Peripheral for use
+/** @fcn        void component_enable(void)
+ *  @brief      Enable Component for use
  *  @details    x
  *
- *  @pre    driver_init()
- *  @post   peripheral is enabled for use & output is enabled
+ *  @pre    component_init()
+ *  @post   component is enabled for use & output is enabled
  *  
  *  @section    Opens
  *      Define & implement routine
  */
 /**************************************************************************************************/
-void driver_enable(void) {
+void component_enable(void) {
 
     //Notify
-    printf("driver_enable(): Driver was enabled\n");
+    printf("component_enable(): Component was enabled\n");
 
     return;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_disable(void)
- *  @brief      Disable peripheral from use
+/** @fcn        void component_disable(void)
+ *  @brief      Disable component from use
  *  @details    x
  *
- *  @pre    driver_init()
- *  @post   peripheral is disabled from use & output is disabled
+ *  @pre    component_init()
+ *  @post   component is disabled from use
  *  
  *  @section    Opens
  *      Define & implement routine
  */
 /**************************************************************************************************/
- void driver_disable(void) {
+ void component_disable(void) {
     
     //Notify
-    printf("driver_enable(): Driver was disabled\n");
+    printf("component_enable(): Component was disabled\n");
 
     return;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_start(void)
- *  @brief      Begin driver operations
+/** @fcn        void component_start(void)
+ *  @brief      Begin component operations
  *  @details    x
  *
- *  @pre    driver_init()
- *  @post   Peripheral is operational & running
+ *  @pre    component_init()
+ *  @post   Component is operational & running
  *  
  *  @section    Opens
  *      Define & implement routine
  */
 /**************************************************************************************************/
-void driver_start(void) {
+void component_start(void) {
 
     //Locals
 
@@ -175,29 +175,29 @@ void driver_start(void) {
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_stop(void)
- *  @brief      Stop driver operations
+/** @fcn        void component_stop(void)
+ *  @brief      Stop component operations
  *  @details    x
  *
- *  @pre    driver_init()
- *  @post   Peripheral is stopped from operation
+ *  @pre    component_init()
+ *  @post   Component is stopped from operation
  *  
  *  @section    Opens
  *      Define & implement routine
  */
 /**************************************************************************************************/
-void driver_stop(void) {
+void component_stop(void) {
     
     return;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void *driver_status(void)
+/** @fcn        void *component_status(void)
  *  @brief      Current status of API performance
  *  @details    x
  *
- *  @return   (void *) driver status for driver api
+ *  @return   (void *) component status for component api
  *
  *  @pre    any
  *  @post   x
@@ -206,78 +206,78 @@ void driver_stop(void) {
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-void *driver_status(void) {
+void *component_status(void) {
     
     return NULL;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_reset(void)
- *  @brief      Reset peripheral state & operations
+/** @fcn        void component_reset(void)
+ *  @brief      Reset component state & operations
  *  @details    x
  *
- *  @pre    driver_init()
- *  @post   Peripheral is reset to its initial state condition
+ *  @pre    component_init()
+ *  @post   Component is reset to its initial state condition
  *  
  *  @section    Opens
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-void driver_reset(void) {
+void component_reset(void) {
     
     return;
 }
  
  
 /**************************************************************************************************/
-/** @fcn        void driver_setConfig(DriverConfig *cfg)
+/** @fcn        void component_setConfig(CompConfig *cfg)
  *  @brief      Update configuration value
  *  @details    x
  *
- *  @param    [in]  (DriverConfig *) cfg - Driver configuration to apply
+ *  @param    [in]  (CompConfig *) cfg - Component configuration to apply
  *
- *  @pre    driver_init()
- *  @post   config value is applied to the peripheral
+ *  @pre    component_init()
+ *  @post   config value is applied to the component
  *  
  *  @section    Opens
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-void driver_setConfig(DriverConfig *cfg) {
+void component_setConfig(CompConfig *cfg) {
 
     //Copy value
-    memcpy(cfg, &driverCfg, sizeof(DriverConfig));
+    memcpy(cfg, &compConfig, sizeof(CompConfig));
     
-    //Apply to peripheral
+    //Apply to component
 
     return;
 }
  
  
 /**************************************************************************************************/
-/** @fcn        DriverConfig *driver_getConfig(void)
+/** @fcn        CompConfig *component_getConfig(void)
  *  @brief      Applied configuration for use
  *  @details    x
  *
- *  @return   (DriverConfig *) driver configuration access handle
+ *  @return   (CompConfig *) component configuration access handle
  *
  *  @pre    any
  *  @post   x
  */
 /**************************************************************************************************/
-DriverConfig *driver_getConfig(void) {
+CompConfig *component_getConfig(void) {
 
-    return &driverCfg;
+    return &compConfig;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void *driver_getInfo(void)
- *  @brief      Retrieve peripheral information
+/** @fcn        void *component_getInfo(void)
+ *  @brief      Retrieve component information
  *  @details    e.g. identifiers & specs
  *
- *  @return   (void *) driver info access handle
+ *  @return   (void *) component info access handle
  *
  *  @pre    any
  *  @post   x
@@ -286,18 +286,18 @@ DriverConfig *driver_getConfig(void) {
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-void *driver_getInfo(void) {
+void *component_getInfo(void) {
 
     return NULL;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        int driver_getState(void)
+/** @fcn        int component_getState(void)
  *  @brief      Retrieve current operational state
  *  @details    e.g. output values
  *
- *  @return   (int) current driver value
+ *  @return   (int) current component value
  *
  *  @pre    any
  *  post    x
@@ -306,107 +306,107 @@ void *driver_getInfo(void) {
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-int driver_getState(void) {
+int component_getState(void) {
 
     return 0;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_setState(int val)
+/** @fcn        void component_setState(int val)
  *  @brief      Apply current operational state
  *  @details    e.g. output values
  *
- *  @param    [in]  (int) val - update driver value to set
+ *  @param    [in]  (int) val - update component value to set
  *
- *  @pre    driver_init()
- *  @post   state value update is applied to the peripheral
+ *  @pre    component_init()
+ *  @post   state value update is applied to the component
  *
  *  @section    Opens
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
- void driver_setState(int val) {
+ void component_setState(int val) {
     
     return;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        int driver_read(void)
- *  @brief      Read driver values
- *  @details    e.g. stream inputs or peripheral state
+/** @fcn        int component_read(void)
+ *  @brief      Read component values
+ *  @details    e.g. stream inputs or component state
  *
- *  @return   (int) current driver value
+ *  @return   (int) current component value
  *
- *  @pre    driver_init()
+ *  @pre    component_init()
  *  @post   x
  *
  *  @section    Opens
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-int driver_read(void) {
+int component_read(void) {
 
     return 0;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_write(int val)
- *  @brief      Write driver values
- *  @details    e.g. stream inputs or peripheral state
+/** @fcn        void component_write(int val)
+ *  @brief      Write component values
+ *  @details    e.g. stream inputs or component state
  *
- *  @param    [in]  (int) update driver value to apply
+ *  @param    [in]  (int) update component value to apply
  *
- *  @pre    driver_init()
- *  @post   written value is applied to the peripheral
+ *  @pre    component_init()
+ *  @post   written value is applied to the component
  *
  *  @section    Opens
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-void driver_write(int val) {
+void component_write(int val) {
 
     return;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void *driver_getLog(void)
- *  @brief      Retrieve log history for Driver operations
+/** @fcn        void *component_getLog(void)
+ *  @brief      Retrieve log history for Component operations
  *  @details    x
  *
  *  @return   (void *) log file access handle
  *  
- *  @pre    driver_init()
+ *  @pre    component_init()
  *
  *  @section    Opens
  *      Define & implement state & routine
  */
 /**************************************************************************************************/
-void *driver_getLog(void) {
+void *component_getLog(void) {
 
     return NULL;
 }
 
 
 /**************************************************************************************************/
-/** @fcn        void driver_callback(void)
- *  @brief      Default peripheral interrupt callback
+/** @fcn        void component_callback(void)
+ *  @brief      Default interrupt callback
  *  @details    x
  *
  *  @section    Purpose
- *      Default interrupt handler for secure driver use
+ *      Default interrupt handler for secure component use
  *
- *  @pre    driver_init()
+ *  @pre    component_init()
  *  @post   interrupt vector is reset
  *
  *  @section    Opens
- *      Define & implement driver state & routine
+ *      Define & implement component state & routine
  */
 /**************************************************************************************************/
-void driver_callback(void) {
+void component_callback(void) {
 
     //Locals
 
