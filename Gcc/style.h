@@ -1,17 +1,17 @@
 /**************************************************************************************************/
-/** @file     x
- *  @brief    x
- *  @details  x
+/** @file       x
+ *  @brief      x
+ *  @details    x
  *
  *  @author     Justin Reina, Firmware Engineer
  *  @created    1/15/25
  *  @last rev   4/15/25
  *
  *
- *  @notes    x
- *
  *  @section    Opens
  *      none current
+ *
+ *  @note   x
  *
  *  @section    Legal Disclaimer
  *      ©2025 Justin Reina. All rights reserved. All contents of this source file and/or any other

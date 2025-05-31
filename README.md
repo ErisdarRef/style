@@ -66,6 +66,13 @@ A balance of standards & clean present -
 
 2. Web - 2 space tabs, with tabs replaced as spaces for portable readability
 
+### Style
+
+* File headers
+
+* Function headers
+
+* Section headers
 
 ## Opens
 
@@ -74,6 +81,14 @@ A balance of standards & clean present -
 * Examples
 
 * Wiki?
+
+* Python & Md templates
+
+* MATLAB StdComments
+
+* JAVA StdComments
+
+* Swift StdComments
 
 # References
 

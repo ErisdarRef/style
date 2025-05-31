@@ -2,9 +2,6 @@
 /** @file       source.h
  *  @brief      source.c interface API 
  *  @details    interface file header is typically omitted in preference for source file header
- *
- *  @section    Opens
- *      joint function use from source.c & source.cpp in compilation
  */
 /**************************************************************************************************/
 #ifndef DIR_SOURCE_H
@@ -15,7 +12,6 @@
 //************************************************************************************************//
 
 //Standard Library Includes
-#include <string>
 
 //Library Includes
 
@@ -44,55 +40,20 @@
 //                                            VARIABLES                                           //
 //************************************************************************************************//
 
+//Constants
+
+//Public
+
+//Private
+
 
 //************************************************************************************************//
 //                                       FUNCTION DECLARATIONS                                    //
 //************************************************************************************************//
 
 //Public
-extern "C" int source_routine(void);
 
 //Private
-
-
-//************************************************************************************************//
-//                                         CLASS DECLARATIONS                                     //
-//************************************************************************************************//
-using namespace std;
-
-/**************************************************************************************************/
-/** @fcn        class Source
- *  @brief      x
- *  @details    x
- */
-/**************************************************************************************************/
-class Source {
-
-public:
-
-    //Public Variables
-    int width;
-    int length;
-    int height;
-
-    //Constructors
-    Source(void);
-
-    Source(int width, int length, int height);
-
-    //Public Methods
-    void init(void);
-
-    int readData(void);
-
-    void writeData(int data);
-
-private:
-
-    //Private Methods
-    void source_log(string msg, int val);
-
-};
 
 
 #endif /*  DIR_SOURCE_H */

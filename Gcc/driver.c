@@ -1,11 +1,11 @@
 /**************************************************************************************************/
-/** @file     driver.c
- *  @brief    Driver source for operation & control
- *  @details  x
+/** @file       driver.c
+ *  @brief      Driver source for operation & control
+ *  @details    x
  *
- *  @author   Justin Reina, Firmware Engineer
- *  @created  4/3/25
- *  @last rev 4/19/25
+ *  @author     Justin Reina, Firmware Engineer
+ *  @created    4/3/25
+ *  @last rev   4/19/25
  *
  *  @note   Contents from this template are recommended as needed
  *

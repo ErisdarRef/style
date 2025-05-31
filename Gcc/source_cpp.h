@@ -1,30 +1,21 @@
 /**************************************************************************************************/
-/** @file       source.c
- *  @brief      x
- *  @details    x
- *
- *  @author     Justin Reina, Firmware Engineer
- *  @created    2/3/25
- *  @last rev   4/15/25
- *
- *  @note   Private functions & variables are declared static
+/** @file       source.h
+ *  @brief      source.cpp interface API 
+ *  @details    interface file header is typically omitted in preference for source file header
  *
  *  @section    Opens
- *      none current
- *
- *  @section    Legal Disclaimer
- *      ©2025 Justin Reina, All rights reserved. All contents of this source file and/or any other
- *      related source files are the explicit property of Justin Reina. Do not distribute.
- *      Do not copy.
+ *      shared interface for source.c & source.cpp
  */
 /**************************************************************************************************/
+#ifndef DIR_SOURCE_H
+#define DIR_SOURCE_H
 
 //************************************************************************************************//
 //                                            INCLUDES                                            //
 //************************************************************************************************//
 
 //Standard Library Includes
-#include <stdlib.h>
+#include <string.h>
 
 //Library Includes
 
@@ -53,57 +44,61 @@
 //                                            VARIABLES                                           //
 //************************************************************************************************//
 
+//------------------------------------------ Constants -------------------------------------------//
+
+//------------------------------------------- Static ---------------------------------------------//
+
+//------------------------------------------ Component -------------------------------------------//
+
 
 //************************************************************************************************//
 //                                       FUNCTION DECLARATIONS                                    //
 //************************************************************************************************//
 
+//Public
+extern "C" int source_routine(void);
+
+//Private
+
 
 //************************************************************************************************//
-//                                          PUBLIC FUNCTIONS                                      //
+//                                         CLASS DECLARATIONS                                     //
 //************************************************************************************************//
+using namespace std;
 
 /**************************************************************************************************/
-/** @fcn        int source_routine(void)
+/** @fcn        class Source
  *  @brief      x
  *  @details    x
- *
- *  @section    Purpose
- *      x
- *
- *  @param    [in]  name    descrip
- *
- *  @param    [out] name    descrip
- *
- *  @return   (type) descrip
- *
- *  @pre    x
- *
- *  @post   x
- *
- *  @section    Opens
- *      x
- *
- *  @note   use of header sections as needed
  */
 /**************************************************************************************************/
-int source_routine(void) {
+class Source {
 
-    //Locals
+public:
+
+    //Public Variables
+    int width;
+    int length;
+    int height;
+
+    //Constructors
+    Source(void);
+
+    Source(int width, int length, int height);
+
+    //Public Methods
+    void init(void);
+
+    int readData(void);
+
+    void writeData(int data);
+
+private:
+
+    //Private Methods
+    void source_log(string msg, int val);
+};
 
 
-    //---------------------------------------- Initialize ----------------------------------------//
-
-
-    //------------------------------------------ Operate -----------------------------------------//
-
-    
-    return EXIT_SUCCESS;
-}
-
-
-//************************************************************************************************//
-//                                         PRIVATE FUNCTIONS                                      //
-//************************************************************************************************//
-
+#endif /*  DIR_SOURCE_H */
 
