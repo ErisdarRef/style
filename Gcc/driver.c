@@ -5,7 +5,7 @@
  *
  *  @author     Justin Reina, Firmware Engineer
  *  @created    4/3/25
- *  @last rev   4/19/25
+ *  @last rev   6/4/25
  *
  *  @note   Contents from this template are recommended as needed
  *
@@ -45,6 +45,12 @@
 //************************************************************************************************//
 
 //-----------------------------------------  Definitions -----------------------------------------//
+
+//Driver Version
+#define DRIVER_VERS     "1.2.3*"                    /* e.g.  '1' for an api change
+                                                            '.2' for a feature change
+                                                            '.3' for a version change or bug fix
+                                                             '*' for a subsequent untracked vers  */
 
 
 //-------------------------------------------- Macros --------------------------------------------//
@@ -418,6 +424,21 @@ void driver_callback(void) {
 
 
     return;
+}
+
+
+/**************************************************************************************************/
+/** @fcn        char *driver_getVersion(void)
+ *  @brief      Retrieve published driver version
+ *  @details    major.minor.rev suffixed with "*" for in development from that version
+ *
+ *  @return   (char *) string reporting driver version
+ *
+ *  @note 	Derivative identifiers may be omitted (e.g. "*" for published content)
+ */
+/**************************************************************************************************/
+char *driver_getVersion(void) {
+    return DRIVER_VERS;
 }
 
 

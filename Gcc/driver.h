@@ -28,7 +28,11 @@
 
 //-----------------------------------------  Definitions -----------------------------------------//
 
+//Dirver Definition
 #define DRIVER_NUM_COMPS    (1)
+
+//Driver Config
+#define DRIVER_DELAY_CTS    (0)
 
 
 //-------------------------------------------- Macros --------------------------------------------//
@@ -89,6 +93,9 @@ extern void *driver_getLog(void);
 
 //Int
 extern void driver_callback(void);                  /* default peripheral interrupt callback      */
+
+//Util
+extern char *driver_getVersion(void);
 
 
 //-------------------------------------------- Private -------------------------------------------//
