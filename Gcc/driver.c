@@ -3,9 +3,9 @@
  *  @brief      Driver source for operation & control
  *  @details    x
  *
- *  @author     Justin Reina, Firmware Engineer
- *  @created    4/3/25
- *  @last rev   6/4/25
+ *  @author     Justin Reina, Embedded Connectivity Engineer (Contractor via LTTS)
+ *  @created    12/3/25
+ *  @last rev   12/3/25
  *
  *  @note   Contents from this template are recommended as needed
  *
@@ -17,8 +17,8 @@
  *      Read/Write - activity
  *
  *  @section    Legal Disclaimer
- *      ©2025 Justin Reina. All rights reserved. All contents of this source file and/or any other
- *      related source files are the explicit property of Justin Reina. Do not distribute.
+ *      ©2025 Mercury Marine. All rights reserved. All contents of this source file and/or any other
+ *      related source files are the explicit property of Mercury Marine. Do not distribute.
  *      Do not copy.
  */
 /**************************************************************************************************/
