@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/json-style.schema.json",
+  "title": "JSON Style Template Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "version",
+    "meta",
+    "identity"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+(?:-<[a-zA-Z0-9.-]+>)?$",
+      "description": "Semantic version of the file content (not product)."
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "header"
+      ],
+      "properties": {
+        "header": {
+          "type": "object",
+          "required": [
+            "file",
+            "brief",
+            "author",
+            "created"
+          ],
+          "properties": {
+            "file": {
+              "type": "string"
+            },
+            "brief": {
+              "type": "string"
+            },
+            "details": {
+              "type": "string"
+            },
+            "author": {
+              "type": "string"
+            },
+            "company": {
+              "type": "string"
+            },
+            "project": {
+              "type": "string"
+            },
+            "created": {
+              "type": "string",
+              "format": "date"
+            },
+            "lastRev": {
+              "type": "string",
+              "format": "date"
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "opens": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "legalDisclaimer": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "sections": {
+          "type": "object",
+          "properties": {
+            "purpose": {
+              "type": "string"
+            },
+            "operation": {
+              "type": "string"
+            },
+            "hazardsAndRisks": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "todo": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "timing": {
+              "type": "string"
+            },
+            "reference": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "config": {
+      "type": "object"
+    },
+    "data": {
+      "type": "object"
+    },
+    "links": {
+      "type": "object"
+    }
+  }
+}

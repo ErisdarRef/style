@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "header": {
+      "file": "<filename>.json",
+      "brief": "<short summary of purpose>",
+      "details": "<extended explanation for maintainers>",
+      "author": "Justin Reina, Firmware Engineer",
+      "company": "<Company Name>",
+      "project": "<Project Name>",
+      "created": "<YYYY-MM-DD>",
+      "lastRev": "<YYYY-MM-DD>",
+      "notes": [
+        "this is a template, remove content as needed",
+        "<freeform notes line 2>"
+      ],
+      "opens": [
+        "<open item 1>",
+        "<open item 2>"
+      ],
+      "legalDisclaimer": "<Year> <Owner>. All rights reserved. All contents of this file are proprietary. Do not distribute. Do not copy."
+    },
+    "sections": {
+      "purpose": "<purpose statement>",
+      "operation": "<operational flow or sequencing>",
+      "hazardsAndRisks": [
+        "<risk 1>",
+        "<risk 2>"
+      ],
+      "todo": [
+        "<todo item 1>",
+        "<todo item 2>"
+      ],
+      "reference": [
+        "<reference 1>"
+      ]
+    }
+  },
+  "$schema": "https://example.com/schemas/json-style.schema.json",
+  "schemaVersion": 2,
+  "version": "0.2.0",
+  "identity": {
+    "id": "<string-id-or-uuid>",
+    "name": "<resource-name>",
+    "description": "<one-liner purpose>",
+    "tags": [
+      "<tag1>",
+      "<tag2>"
+    ]
+  },
+  "config": {
+    "isEnabled": true,
+    "mode": "steady_state",
+    "retry": {
+      "maxAttempts": 3,
+      "backoffMs": 250
+    },
+    "thresholds": {
+      "warning": 0.8,
+      "critical": 0.95
+    }
+  },
+  "data": {
+    "items": []
+  },
+  "links": {
+    "endpoints": [
+      "https://api.example.com/v1/resource"
+    ],
+    "documentation": "https://docs.example.com/resource"
+  }
+}
