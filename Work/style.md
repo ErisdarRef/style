@@ -22,13 +22,14 @@ Brief description of the repository:
 
 
 ## Repository Structure
-
-  repo-root/
+```
+repo-root/
   ├── src/        # Source code
   ├── include/    # Headers
   ├── docs/       # Documentation
   ├── tests/      # Unit tests
   └── README.md   # This file
+```
 
 ## Coding Style
 
