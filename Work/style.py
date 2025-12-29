@@ -2,9 +2,9 @@
 #  Justin Reina | Python Development Template v1 (evolved)
 #  Purpose : Professional, portfolio-ready starter for scripts/packages
 #  License : Proprietary unless otherwise specified in the repository
-#  Author  : Justin Reina, Firmware/Embedded & Systems Engineering
-#  Created : 2025-10-27
-#  Last Rev: 2025-10-27
+#  Author  : Justin Reina, Embedded Connectivity Engineer (Contractor via LTTS)
+#  Created : x
+#  Last Rev: x
 # ============================================================================
 """
 Python Development Template (v1, evolved)

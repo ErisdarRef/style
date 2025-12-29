@@ -2,7 +2,7 @@
 /* Title        :  x                                                                              */
 /*------------------------------------------------------------------------------------------------*/
 /* File         :  x                                                                              */
-/* Author       :  Justin Reina, Firmware Engineer                                                */
+/* Author       :  Justin Reina, Embedded Connectivity Engineer (Contractor via LTTS)             */
 /* Company      :  Company                                                                        */
 /* Project      :  Project                                                                        */
 /* Created      :  dd mm yyyy                                                                     */
@@ -14,7 +14,7 @@
 /* Opens        :  x                                                                              */
 /*                                                                                                */
 /*------------------------------------------------------------------------------------------------*/
-/* Copyright    :  © Year Company All rights reserved                                             */
+/* Copyright    :  © 2025 Mercury Marine All rights reserved                                      */
 /**************************************************************************************************/
 using namespace std;
 

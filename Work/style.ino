@@ -7,9 +7,9 @@
  *      Without using the delay() function. This means that other code can 
  *      run at the same time without being interrupted by the LED code.
  *
- *  @author     Justin Reina, Firmware Engineer
- *  @created    4/19/25
- *  @last rev   4/19/25
+ *  @author     Justin Reina, Embedded Connectivity Engineer (Contractor via LTTS)
+ *  @created    x
+ *  @last rev   x
  *
  *  @section    Opens
  *      none current
@@ -27,9 +27,9 @@
  *            hold time
  *
  *  @section    Legal Disclaimer
- *      ©2025 Justin Reina, All rights reserved. All contents of this source 
+ *      ©2025 Mercury Marine, All rights reserved. All contents of this source 
  *      file and/or any other related source files are the explicit property 
- *      of Justin Reina. Do not distribute. Do not copy.
+ *      of Mercury Marine. Do not distribute. Do not copy.
  *
  *  @section    Source
  *      This example code is in the public domain.

@@ -3,7 +3,7 @@
  :: @brief      x
  :: @details    x
  ::
- :: @author     Justin Reina, Firmware Engineer, Company Name
+ :: @author     Justin Reina, Embedded Connectivity Engineer (Contractor via LTTS)
  :: @created    x
  :: @last rev   x
  ::
@@ -14,8 +14,8 @@
  ::     none current
  ::
  :: @section    Legal Disclaimer
- ::     © Year Company Name, All rights reserved. All contents of this source file and/or
- ::     any other related source files are the explicit property of Company. Do not distribute. 
+ ::     © Year Mercury Marine, All rights reserved. All contents of this source file and/or
+ ::     any other related source files are the explicit property of Mercury Marine. Do not distribute. 
  ::     Do not copy.
  ::
 ::************************************************************************************************::
