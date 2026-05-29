@@ -1,0 +1,60 @@
+; ************************************************************************************************
+; @file       style.reg
+; @brief      Windows Registry file style and comment template
+; @details    Template for consistent, professional .reg file documentation and sectioning.
+;
+; @author     Justin Reina, Firmware Engineer
+; @created    <YYYY-MM-DD>
+; @last rev   <YYYY-MM-DD>
+;
+; @notes      This template provides a standard for .reg file comments, sectioning, and metadata.
+;
+; @section    Opens
+;     <open item 1>
+;     <open item 2>
+;
+; @section    Guidelines
+;     - Use ';' for all comments and section headers.
+;     - Begin with a block header for file metadata and legal.
+;     - Use [SECTION] for logical groupings and explanations.
+;     - Place registry keys/values after relevant section comments.
+;     - Keep line width ~100 chars for readability.
+;     - Document purpose, operation, risks, todos, and references as needed.
+;
+; @section    Legal Disclaimer
+;     © <Year> <Owner>. All rights reserved. All contents of this file are proprietary.
+;     Do not distribute. Do not copy.
+; ************************************************************************************************
+
+Windows Registry Editor Version 5.00
+
+; -----------------------------------------------------------------------------------------------
+; [SECTION] Purpose
+;     <purpose statement>
+; -----------------------------------------------------------------------------------------------
+
+; [HKEY_LOCAL_MACHINE\Software\Example]
+; "ExampleValue"=dword:00000001
+
+; -----------------------------------------------------------------------------------------------
+; [SECTION] Operation
+;     <operational flow or sequencing>
+; -----------------------------------------------------------------------------------------------
+
+; [HKEY_CURRENT_USER\Software\Example]
+; "UserSetting"="Value"
+
+; -----------------------------------------------------------------------------------------------
+; [SECTION] Hazards and Risks
+;     <risk 1>
+;     <risk 2>
+; -----------------------------------------------------------------------------------------------
+
+; [SECTION] TODO
+;     <todo item 1>
+;     <todo item 2>
+; -----------------------------------------------------------------------------------------------
+
+; [SECTION] Reference
+;     <reference 1>
+; -----------------------------------------------------------------------------------------------
