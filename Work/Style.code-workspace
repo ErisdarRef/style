@@ -10,6 +10,15 @@
 			".examples":            true,
 			".gitignore":           true,
 			"Style.code-workspace": true
-		}
+		},
+        "C_Cpp.default.defines": [
+            "STM32F777xx",
+            "USE_HAL_DRIVER",
+            "MY_FEATURE_FLAG=1"
+        ],
+        "C_Cpp.default.includePath": [
+            "${workspaceFolder}/Core/Inc",
+            "${workspaceFolder}/Drivers/**"
+        ]
 	}
 }

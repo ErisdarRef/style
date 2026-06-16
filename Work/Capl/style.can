@@ -1,0 +1,244 @@
+/**************************************************************************************************/
+/** @file       style.can
+ *  @brief      x
+ *  @details    x
+ *
+ *  @author     Justin Reina, Embedded Connectivity Engineer (Contractor via LTTS)
+ *  @created    x
+ *  @last rev   x
+ *
+ *  @note   CAPL node script template for Vector CANalyzer / CANoe
+ *
+ *  @section    Opens
+ *      none current
+ *
+ *  @section    Legal Disclaimer
+ *      ©2026 Mercury Marine. All rights reserved. All contents of this source file and/or any other
+ *      related source files are the explicit property of Mercury Marine. Do not distribute.
+ *      Do not copy.
+ */
+/**************************************************************************************************/
+
+//************************************************************************************************//
+//                                            INCLUDES                                            //
+//************************************************************************************************//
+
+includes {
+    //#include "style.cin"
+}
+
+
+//************************************************************************************************//
+//                                           VARIABLES                                            //
+//************************************************************************************************//
+
+variables {
+
+    //-----------------------------------------  Timers ------------------------------------------//
+
+    msTimer tmr_example;                            /* example millisecond timer                  */
+
+    //------------------------------------------ Messages ----------------------------------------//
+
+    message 0x100 msg_example = {dlc = 8, dir = tx};/* example transmit message (ID 0x100)        */
+
+    //----------------------------------------- Constants ----------------------------------------//
+
+    const int   kExampleConst = 0;                  /* example named constant                     */
+    const float kExampleRate  = 0.0;                /* example rate constant                      */
+
+}
+
+
+//************************************************************************************************//
+//                                         MEASUREMENT EVENTS                                     //
+//************************************************************************************************//
+
+/**************************************************************************************************/
+/** @fcn        on preStart
+ *  @brief      Pre-measurement initialization
+ *  @details    Runs before measurement starts; use for early configuration
+ *
+ *  @note   Do not transmit messages here; bus is not yet active
+ */
+/**************************************************************************************************/
+on preStart {
+
+    //Locals
+
+
+    //---------------------------------------- Initialize ----------------------------------------//
+
+
+    //------------------------------------------ Operate -----------------------------------------//
+
+
+}
+
+
+/**************************************************************************************************/
+/** @fcn        on start
+ *  @brief      Measurement start handler
+ *  @details    Runs when measurement begins; primary initialization entry point
+ *
+ *  @post   Node is active; timers and messages may now be used
+ *
+ *  @note   Entry-point equivalent — analogous to main() in C
+ */
+/**************************************************************************************************/
+on start {
+
+    //Locals
+
+
+    //---------------------------------------- Initialize ----------------------------------------//
+
+
+    //------------------------------------------ Operate -----------------------------------------//
+
+    setTimer(tmr_example, 100);                     /* arm example timer @ 100 ms                 */
+
+    write("style.can: Measurement started");
+}
+
+
+/**************************************************************************************************/
+/** @fcn        on stopMeasurement
+ *  @brief      Measurement stop handler
+ *  @details    Cleanup called before measurement terminates
+ *
+ *  @pre    Measurement running
+ *  @post   Resources released; node inactive
+ */
+/**************************************************************************************************/
+on stopMeasurement {
+
+    //Locals
+
+
+    //---------------------------------------- Cleanup -------------------------------------------//
+
+    cancelTimer(tmr_example);
+
+    write("style.can: Measurement stopped");
+}
+
+
+//************************************************************************************************//
+//                                          MESSAGE HANDLERS                                      //
+//************************************************************************************************//
+
+/**************************************************************************************************/
+/** @fcn        on message 0x100
+ *  @brief      Handler for CAN message ID 0x100
+ *  @details    x
+ *
+ *  @param    [in]  (message) this - received CAN message frame
+ *
+ *  @note   Access byte data via this.byte(n), or signal data via named signal identifiers
+ */
+/**************************************************************************************************/
+on message 0x100 {
+
+    //Locals
+
+
+    //---------------------------------------- Process -------------------------------------------//
+
+    write("style.can: Received msg ID=0x%03X  DLC=%d", this.id, this.dlc);
+}
+
+
+//************************************************************************************************//
+//                                          TIMER HANDLERS                                        //
+//************************************************************************************************//
+
+/**************************************************************************************************/
+/** @fcn        on timer tmr_example
+ *  @brief      Periodic example timer callback
+ *  @details    x
+ *
+ *  @note   Re-arm the timer here to sustain periodic operation
+ */
+/**************************************************************************************************/
+on timer tmr_example {
+
+    //Locals
+
+
+    //------------------------------------------ Operate -----------------------------------------//
+
+    setTimer(tmr_example, 100);                     /* re-arm @ 100 ms for periodic operation     */
+}
+
+
+//************************************************************************************************//
+//                                            KEY HANDLERS                                        //
+//************************************************************************************************//
+
+/**************************************************************************************************/
+/** @fcn        on key 'a'
+ *  @brief      Keyboard shortcut handler for key 'a'
+ *  @details    x
+ */
+/**************************************************************************************************/
+on key 'a' {
+
+    write("style.can: Key 'a' pressed");
+}
+
+
+//************************************************************************************************//
+//                                       ENVIRONMENT VARIABLES                                    //
+//************************************************************************************************//
+
+/**************************************************************************************************/
+/** @fcn        on envVar ExampleVar
+ *  @brief      Handler for environment variable ExampleVar
+ *  @details    Fires whenever the value of ExampleVar changes
+ *
+ *  @note   Declare ExampleVar in the CANalyzer / CANoe Environment Database (.dbc or system var)
+ */
+/**************************************************************************************************/
+on envVar ExampleVar {
+
+    //Locals
+    int val;
+
+
+    //---------------------------------------- Process -------------------------------------------//
+
+    val = getValue(this);
+
+    write("style.can: ExampleVar changed -> %d", val);
+}
+
+
+//************************************************************************************************//
+//                                        PRIVATE FUNCTIONS                                       //
+//************************************************************************************************//
+
+/**************************************************************************************************/
+/** @fcn        void example_helper(int param)
+ *  @brief      x
+ *  @details    x
+ *
+ *  @param    [in]  (int) param - x
+ *
+ *  @note   x
+ */
+/**************************************************************************************************/
+void example_helper(int param) {
+
+    //Locals
+
+
+    //---------------------------------------- Initialize ----------------------------------------//
+
+
+    //------------------------------------------ Operate -----------------------------------------//
+
+
+    return;
+}
+
